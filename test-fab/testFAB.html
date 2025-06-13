@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pickaxe FAB Embed Test</title>
+  <style>
+    body {
+      background-color: beige;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2.2rem;
+      color: #222;
+    }
+    .content {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff8ee;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .filler {
+      margin: 2rem auto;
+      max-width: 600px;
+      background: #f5e0c3;
+      border-radius: 8px;
+      padding: 1.5rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    /* Target the drawer inside your unique embed by ID, force fixed positioning */
+    .embed-embed > .pxe-absolute.pxe-z-50 {
+        position: fixed !important;
+        z-index: 2147483647 !important; /* ensures it stays on top */
+    }
+  </style>
+</head>
+<body>
+  <h1>FAB Embed Test</h1>
+
+  <div class="content">
+    <p>This is a scroll test for the Pickaxe FAB embed. The button and chat drawer should always stay visible at the bottom corner of your screen, even as you scroll down the page.</p>
+  </div>
+
+  <!-- Filler content to force scrolling -->
+  <div class="filler">Scroll down for more content...</div>
+  <div class="filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue eu ultricies dictum. Sed cursus orci eu sem porta, at volutpat sem tempor. Proin blandit magna ut purus luctus, at laoreet magna fermentum.</div>
+  <div class="filler">Vivamus ullamcorper, metus id dictum mattis, magna urna tristique velit, ac tincidunt massa erat non nulla. Morbi euismod accumsan nisi, a dapibus elit. Suspendisse eget accumsan quam, id pretium neque.</div>
+  <div class="filler">Donec sodales risus et faucibus tempus. Suspendisse potenti. Aenean posuere convallis erat, id sagittis velit dictum sed. Nullam ut neque nec enim scelerisque cursus.</div>
+  <div class="filler">More filler content to ensure there is plenty of space to scroll and test the FAB embed!</div>
+  <div class="filler">Keep scrolling! The FAB should still be accessible...</div>
+  <div class="filler">Almost there! If you see the FAB at the bottom, it's working as expected.</div>
+  <div class="filler">End of the page. The FAB button should be visible at the bottom right no matter how far you scroll.</div>
+
+  <!-- Pickaxe FAB Embed -->
+  <div class="embed-embed" id="deployment-f4aaaf52-0351-47ec-b3c0-1035618cd56a"></div>
+  <script src="https://studio.pickaxe.co/api/embed/bundle.js" defer></script>
+
+</body>
+</html>
